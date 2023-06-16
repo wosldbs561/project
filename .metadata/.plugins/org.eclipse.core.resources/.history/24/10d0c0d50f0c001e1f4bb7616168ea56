@@ -1,0 +1,10 @@
+package com.mall.service;
+
+import java.util.List;
+
+import com.mall.domain.MemberVO;
+
+public interface AdMemService {
+
+	List<MemberVO> memberList(String mbsp_id);
+}

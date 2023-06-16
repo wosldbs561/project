@@ -1,0 +1,36 @@
+package com.mall.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.mall.service.AdMemService;
+import com.mall.service.AdProductService;
+
+import lombok.Setter;
+import lombok.extern.log4j.Log4j;
+
+@Log4j
+@Controller
+@RequestMapping("/admin/member/*")
+public class AdMemController {
+
+	@Setter(onMethod_ = {@Autowired})
+	private AdMemService adMemService;
+	
+	
+	// 관리자 회원목록페이지
+	@GetMapping("memberList")
+	public String memberList() {
+		
+		
+		
+		
+		
+		
+		return "/admin/member/memberList";
+	}
+	
+	
+}
